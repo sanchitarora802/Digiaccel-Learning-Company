@@ -1,0 +1,30 @@
+.genreWrap{
+    display: inline-block;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.genreWrap::-webkit-scrollbar {
+    display: none;
+}
+
+.genreHeading{
+    font-size: 24px;
+    padding: 30px;
+    margin: 0px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.genreCardsWrap{
+    display: inline-flex;
+}
+
+.genreCard{
+    border: 2px black solid;
+    width: 200px;
+    height: 100px;
+    margin-left: 30px;
+    cursor: pointer;
+}
