@@ -1,0 +1,40 @@
+.searchWrap{
+    display: flex;
+}
+
+.searchImg{
+    border: 2px black solid;
+    margin: 30px;
+    width: fit-content;
+    width: 300px;
+    height: 450px;
+}
+.ContentWrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.TitleWrap{
+    display: flex;
+
+}
+.title{
+    padding: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.SummaryWrap{
+    display: flex;
+    flex-direction: column;
+}
+.SummaryLabel{
+    font-size: 26px;
+    font-weight: 600;
+    padding: 20px 20px 00px 20px;
+}
+.summaryText{
+    padding: 0px 20px 00px 20px;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 400;
+}

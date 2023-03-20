@@ -1,12 +1,20 @@
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import GenreWrap from "./Components/GenreWrap";
 import Header from "./Components/Header";
+import SearchResult from "./Components/SearchResult";
 
 function App() {
   const [res, setRes] = useState();
   const [globalArr, setGlobalArr] = useState([]);
-
+  
   var dummyglobalArr = [];
+
+  const storeState = useSelector((state) => {
+    return state.Search
+  })
+
+  const {isSearch} = storeState
 
   const fetchData = async () => {
     try {
@@ -27,7 +35,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
-
+    // console.log(storeState)
     return;
   }, []);
 
@@ -35,7 +43,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <GenreWrap res={res} globalArr={globalArr} />
+      {!isSearch && <GenreWrap res={res} globalArr={globalArr} />}
+      {isSearch && <SearchResult />}
     </div>
   );
 }
