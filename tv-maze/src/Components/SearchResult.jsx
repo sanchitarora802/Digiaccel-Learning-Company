@@ -12,10 +12,6 @@ var storeData = useSelector((state) =>{
      })
  const {searchResult} = storeData
 
- const changeRating = () =>{
-
- }
-
   return (
     <div className='searchWrap'>
         <div className='searchImg'>

@@ -35,7 +35,6 @@ function App() {
 
   useEffect(() => {
     fetchData();
-    // console.log(storeState)
     return;
   }, []);
 
